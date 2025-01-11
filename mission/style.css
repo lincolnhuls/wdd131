@@ -1,0 +1,38 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+#mainBody {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+h1 {
+    font-size: 30px;
+}
+h1, #universityName {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 4px;
+}
+#underline {
+    border-bottom: .5px solid black;
+}
+#universityName {
+    color: #006EB6;
+}
+#italic {
+    font-style: italic;
+}
+.left {
+    text-align: left;
+}
+img {
+    width: 150px;
+}

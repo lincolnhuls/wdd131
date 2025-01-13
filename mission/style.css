@@ -23,9 +23,13 @@ h1, #universityName {
 }
 #underline {
     border-bottom: .5px solid black;
+    padding-bottom: 0px;
+    margin-bottom: 50px;
 }
 #universityName {
     color: #006EB6;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 #italic {
     font-style: italic;

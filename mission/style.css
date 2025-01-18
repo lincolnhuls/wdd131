@@ -40,3 +40,10 @@ h1, #universityName {
 img {
     width: 150px;
 }
+.dark {
+    background-color: #333;
+    color: white;
+}
+.dark #mainBody #underline #universityName {
+    color: #4F9ACF;
+}

@@ -6,8 +6,8 @@ function taskTemplate(task) {
     <li ${task.completed ? 'class="strike"' : ""}>
       <p>${task.detail}</p>
       <div>
-        <span data-function="delete">❎</span>
-        <span data-function="complete">✅</span>
+        <span data-action="delete">❎</span>
+        <span data-action="complete">✅</span>
       </div>
     </li>`
 }

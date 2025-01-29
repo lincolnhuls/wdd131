@@ -1,9 +1,24 @@
 // events.js
 let tasks = [];
 
+function taskTemplate(task) {
+  return `
+    <li ${task.completed ? 'class="strike"' : ""}>
+      <p>${task.detail}</p>
+      <div>
+        <span data-function="delete">❎</span>
+        <span data-function="complete">✅</span>
+      </div>
+    </li>`
+}
+
 function renderTasks(tasks) {
   // get the list element from the DOM
+  const listElement = document.querySelector('#todoList');
   // loop through the tasks array. transform (map) each task object into the appropriate HTML to represent a to-do.
+  listElement.innerHTML = "";
+  const html = tasks.map(taskTemplate).join('');
+  listElement.innerHTML = html;
 }
 
 function newTask() {
@@ -44,14 +59,22 @@ function completeTask(taskElement) {
 function manageTasks(event) {
   // did they click the delete or complete icon?
   console.log(event.target);
-  console.log(event.currentTarget);
+  const parent = event.target.closest("li");
+  if (event.target.dataset.action === "delete") {
+    removeTask(parent);
+  }
+  if (event.target.dataset.action === "complete") {
+    completeTask(parent);
+  }
+}
   // event.target will point to the actual icon clicked on. We need to get the parent li to work with however. HINT: Remember element.closest()? Look it up if you don't
 
   // because we added 'data-action="delete"' to each icon in a task we can access a dataset property on our target (e.target.dataset.action)
   // use that in a couple of if statements to decide whether to run removeTask or completeTask
-}
 
 // Add your event listeners here
 // We need to attach listeners to the submit button and the list. Listen for a click, call the 'newTask' function on submit and call the 'manageTasks' function if either of the icons are clicked in the list of tasks.
-const submit = document.querySelector("#submitTask");
-submit.addEventListener('click', newTask);
+document.querySelector("#submitTask").addEventListener("click", newTask);
+document.querySelector("#todoList").addEventListener("click", manageTasks);
+
+renderTasks(tasks);

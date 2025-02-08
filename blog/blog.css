@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: .85em;
+}
+h1 {
+    text-align: center;
+    font-family: Lora, Impact, serif;
+    margin: 30px;
+}
+.skiptocontent {
+    position: absolute;
+    top: -40px;
+}
+.skiptocontent:focus {
+    position: absolute;
+    top:0;
+}
+nav {
+    text-align: right;
+    border-top: 2px solid #EFC69B;
+    border-bottom: 2px solid #EFC69B;
+    padding-bottom: 3px;
+    margin-bottom: 25px;
+    padding-right: 50px;
+}
+a {
+    color: #AF1B3F;
+    text-decoration: none;
+}
+ul {
+    display: grid;
+    grid-template-columns: repeat(3, 75px);
+    list-style: none;
+    justify-content: end;
+    justify-items: end;
+    font-size: 1.2em;
+}
+main {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    column-gap: 20px;
+}
+.mainBookSection {
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr, 2fr;
+    column-gap: 50px;
+}
+.bookInfo {
+    grid-column: 1;
+    text-align: right;
+    border-right: 2px solid #EFC69B;
+    margin: 25px;
+    padding-right: 20px;
+}
+.bookInfo div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bookStoryInfo {
+    grid-column: 2;
+    text-align: center;
+}
+.bookStoryInfo p {
+    text-align: left;
+}
+#filters {
+    grid-column: 2;
+    padding: 25px;
+}
+h2 {
+    color: #AF1B3F;
+    font-family: Lora, Impact, serif;
+}
+#filters {
+    border: 2px solid #EFC69B;
+}

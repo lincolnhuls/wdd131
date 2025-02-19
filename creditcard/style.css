@@ -45,7 +45,7 @@ form {
     grid-column: 1/2;
 }
 
-.card-image, #expire {
+.card-image, #expire, #expireLabel {
     grid-column: 2/3;
 }
 
@@ -61,16 +61,47 @@ form {
     align-self: end;
 }
 
+#expire {
+    align-self: end;
+}
+
+#expireLabel {
+    justify-self: left;
+}
+
 #month, #year {
     height: 25%;
     width: 25%;
-    align-self: center;
 }
 
 #cardBack {
     grid-column: 2/8;
     grid-row: 2/7;
     z-index: 0;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1fr;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#blackStrip {
+    background-color: black;
+    height: 50%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#cvcContainer {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: end;
+    justify-self: center;
+}
+
+#cvc {
+    width: 50%;
 }
 
 #total {

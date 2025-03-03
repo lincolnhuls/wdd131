@@ -1,0 +1,40 @@
+@import url(https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap);
+
+h1 {
+    font-family: 'Annie Use Your Telescope', cursive, sans-serif;
+    font-size: 3em;
+}
+header {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 20px;
+}
+
+header h1 {
+    align-self: flex-end;
+    margin: 0;
+}
+
+header img {
+    height: 100px;
+    width: auto;
+    align-self: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.searchBar {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.searchBar input {
+    grid-column: 1/2;
+}
+
+.searchBar button {
+    grid-column: 2/3;
+}

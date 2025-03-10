@@ -76,6 +76,13 @@ simpleList.sort().reverse();
 
 console.log(simpleList);
 
+function simpleSortList(list, query) {
+    function simpleSearchCallback(string) {
+        return string.toLowerCase().includes(query.toLowerCase());
+    }
+    return list.filter(simpleSearchCallback);
+}
+
 function searchList(list, query) {
     function searchCallback(object){
         return (
@@ -91,6 +98,8 @@ function searchList(list, query) {
 
     return sorted;
 }
+
+console.log(simpleSortList(simpleList, "b"));
 
 console.log(searchList(hikes, "yellowstone"));
 console.log(searchList(hikes, "moderate"));

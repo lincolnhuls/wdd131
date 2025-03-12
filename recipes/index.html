@@ -10,7 +10,7 @@
     <meta property="og:url" content="https://lincolnhuls.github.io/wdd131/recipes/">
     <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="recipes.css">
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
     <title>Recipe Book</title>
 </head>
 <body>
@@ -23,25 +23,11 @@
             <label for="search" id="searchLabel">Find a Recipe!</label>
             <div class="searchBar">
                 <input type="search" id="search" name="search" placeholder="Find a recipe...">
-                <button type="submit"><img src="images/search.svg" alt="Search button"></button>
+                <button type="submit" id="searchButton"><img src="images/search.svg" alt="Search button"></button>
             </div>
         </form>
         <section id="recipeInfo">
-            <img src="images/chocolate-chip-cookies.jpg" alt="Chocolate chip cookies">
-            <div class="tags">
-                <span>Dessert</span>
-            </div>
-            <div id="raitingContainer">
-                <h2>Apple Crisp</h2>
-                <span id="rating" role="img" aria-label="Rating: 5 out of 5 stars">
-                    <span aria-hidden="true" class="iconStar">⭐</span>
-                    <span aria-hidden="true" class="iconStar">⭐</span>
-                    <span aria-hidden="true" class="iconStar">⭐</span>
-                    <span aria-hidden="true" class="iconStar">⭐</span>
-                    <span aria-hidden="true" class="iconStar">⭐</span>
-                </span>
-            </div>
-            <p>Delicious soft chocolate chip cookies with coconut.</p>
+            <!-- Js will supply the html and info -->
         </section>
     </main>
     <footer>

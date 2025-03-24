@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #087E8B;
+    height: 75px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    height: 100%;
+}
+
+nav img {
+    height: 100%;
+    width: auto;
+}

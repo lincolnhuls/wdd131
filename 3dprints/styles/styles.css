@@ -12,14 +12,31 @@ header {
 
 nav {
     display: flex;
-    height: 100%;
-    align-items: flex-end;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 15px;
-    gap: 50px;
+    height: 75px;
+    align-items: center;
+    padding: 25px;
+    gap: 75px;
 }
 
 nav img {
     height: 75px;
+}
+
+nav img:hover {
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFDFD;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav a:hover {
+    background-color: #FFFDFD;
+    color: #087E8B;
 }

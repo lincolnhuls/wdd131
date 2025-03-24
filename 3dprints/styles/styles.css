@@ -1,7 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Nunito Sans, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
@@ -22,10 +32,6 @@ nav img {
     height: 75px;
 }
 
-nav img:hover {
-    
-}
-
 nav a {
     text-decoration: none;
     color: #FFFDFD;
@@ -39,4 +45,18 @@ nav a {
 nav a:hover {
     background-color: #FFFDFD;
     color: #087E8B;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: #087E8B;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFDFD;
 }

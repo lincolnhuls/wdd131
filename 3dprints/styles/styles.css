@@ -60,3 +60,27 @@ footer {
     align-items: center;
     color: #FFFDFD;
 }
+
+.objectInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    height: 100%;
+    justify-items: center;
+}
+
+.objectInfo figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+}
+
+.objectInfo img {
+    max-height: 300px; 
+    max-width: 100%; 
+    object-fit: contain;
+    margin-bottom: 15px;
+}

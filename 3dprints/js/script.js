@@ -20,7 +20,9 @@ function renderObjects(objectList) {
 }
 
 function init() {
-    renderObjects(objects);
+    if (document.querySelector('.objectInfo')) {
+        renderObjects(objects);
+    }   
 }
 
 init();

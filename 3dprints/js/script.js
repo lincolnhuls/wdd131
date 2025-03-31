@@ -27,19 +27,14 @@ function filter(query) {
             object.image.toLowerCase().includes(query)
         );
     })
-	// sort by name
     const sorted = filtered.sort((a, b) => a.name.localeCompare(b.name));
     return sorted;
 }
 
 function searchHandler(event) {
     event.preventDefault();
-    // get the search input
-    // convert the value in the input to lowercase
     const query = document.querySelector("#search").value.toLowerCase();
-    // use the filter function to filter our recipes
     const filteredObjects = filter(query);
-    // render the filtered list
     renderObjects(filteredObjects);
 }  
 

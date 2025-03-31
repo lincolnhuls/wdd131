@@ -120,7 +120,6 @@ footer {
 #aboutInfo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* gap: 20px; */
     padding: 20px;
     padding-right: 35px;
     height: 100%;
@@ -167,22 +166,22 @@ footer {
     nav {
         height: 100%;
         display: flex;
-        flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center-align the links */
-        gap: 10px; /* Add spacing between links */
-        padding: 10px; /* Add padding around the navigation */
+        flex-direction: column; 
+        align-items: center; 
+        gap: 10px; 
+        padding: 10px; 
         box-sizing: border-box;
     }
 
     nav a {
-        display: block; /* Ensure links are block-level elements */
-        width: 100%; /* Make links take up the full width */
-        text-align: center; /* Center-align the text */
-        padding: 10px; /* Add padding for better touch usability */
-        background-color: #087E8B; /* Optional: Add a background color */
-        color: #FFFDFD; /* Ensure the text is visible */
-        border-radius: 5px; /* Optional: Add rounded corners */
-        text-decoration: none; /* Remove underline */
+        display: block; 
+        width: 100%; 
+        text-align: center; 
+        padding: 10px; 
+        background-color: #087E8B; 
+        color: #FFFDFD; 
+        border-radius: 5px; 
+        text-decoration: none;
     }
 
     #searchForm {

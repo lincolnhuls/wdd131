@@ -43,12 +43,13 @@ function searchHandler(event) {
     renderObjects(filteredObjects);
 }  
 
-document.querySelector("#searchForm").addEventListener("submit", searchHandler);
-
 function init() {
     if (document.querySelector('.objectInfo')) {
         renderObjects(objects);
-    }   
+    }  
+    if (document.querySelector('#searchForm')) {
+        document.querySelector("#searchForm").addEventListener("submit", searchHandler);
+    }
 }
 
 const logo = document.querySelector('.logo');

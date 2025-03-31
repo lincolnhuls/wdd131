@@ -54,11 +54,36 @@ nav .padding:hover {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#searchLabel {
+    display: none;
+}
+
+#searchForm {
+    margin: 10px 50px;
+}
+
+#search {
+    width: 25%;
+    height: 50px;
+    padding: 20px;
+    margin: 25px;
+    border-radius: 15px;
+    border: 3px solid black;
+    font-weight: bold;
+}
+
+.padding {
+    padding: 5px;
+    border: 15%;
 }
 
 footer {
     background-color: #087E8B;
-    height: 75px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -73,6 +98,8 @@ footer {
     padding: 20px;
     height: 100%;
     justify-items: center;
+    padding-bottom: 50px;
+    box-sizing: border-box;
 }
 
 .objectInfo figure {
@@ -129,4 +156,67 @@ footer {
     max-width: 100%;
     object-fit: contain;
     border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        height: 250px;
+    }
+
+    nav {
+        height: 100%;
+        display: flex;
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center-align the links */
+        gap: 10px; /* Add spacing between links */
+        padding: 10px; /* Add padding around the navigation */
+        box-sizing: border-box;
+    }
+
+    nav a {
+        display: block; /* Ensure links are block-level elements */
+        width: 100%; /* Make links take up the full width */
+        text-align: center; /* Center-align the text */
+        padding: 10px; /* Add padding for better touch usability */
+        background-color: #087E8B; /* Optional: Add a background color */
+        color: #FFFDFD; /* Ensure the text is visible */
+        border-radius: 5px; /* Optional: Add rounded corners */
+        text-decoration: none; /* Remove underline */
+    }
+
+    #searchForm {
+        margin: 10px auto;
+        width: 90%;
+    }
+
+    #search {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .objectInfo {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #aboutInfo {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    #contactInfo {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #contactInfo img {
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
